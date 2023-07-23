@@ -56,7 +56,7 @@
 
             <div style="padding-top: 50px" class="text-center">
               <span>
-                Выберите минимальную стоимость
+                Выберите максимальную стоимость
               </span>
               <q-slider
                 name="speed"
@@ -316,7 +316,7 @@ export default defineComponent({
         this.selectType = []
         this.ratingSelect = ref([0,1,2,3,4,5])
         this.reviews = null
-        this.amountSelect = null
+        this.amountSelect = this.amountMax
     },
     changePage(){
 
