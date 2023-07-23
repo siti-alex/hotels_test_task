@@ -78,9 +78,11 @@
           </div>
         </q-list>
     </q-drawer>
-
     <q-page class="flex flex-center">
-      <div style="min-width: 100%">
+      <div v-if="filteredAll.length === 0">
+        Записей не найдено
+      </div>
+      <div v-else style="min-width: 100%">
       <q-list bordered separator>
         <q-item v-for="hotel in filteredAll">
           <q-item-section>
